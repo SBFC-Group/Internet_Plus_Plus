@@ -89,19 +89,20 @@ Public Class Internetplusplus
     End Sub
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
-        If TextBox1.Text = "" Then
-        Else
-            If TextBox1.Text = "cmd" Then
-                UI.StartCMD("New")
-                'CMD STRING'
-            Else
-                If TextBox1.Text.Contains("https://") = True Then
-                    WebView21.Source = New Uri(TextBox1.Text)
-                Else
-                    WebView21.Source = New Uri("https://" & TextBox1.Text)
-                End If
-            End If
-        End If
+        'If TextBox1.Text = "" Then
+        'Else
+        '    If TextBox1.Text = "cmd" Then
+        '        UI.StartCMD("New")
+        '        'CMD STRING'
+        '    Else
+        '        If TextBox1.Text.Contains("https://") = True Then
+        '            WebView21.Source = New Uri(TextBox1.Text)
+        '        Else
+        '            WebView21.Source = New Uri("https://" & TextBox1.Text)
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView21, TextBox1)
     End Sub
 
     <DllImport("user32.DLL", EntryPoint:="ReleaseCapture")>
@@ -126,16 +127,23 @@ Public Class Internetplusplus
             FormBorderStyle = FormBorderStyle.Sizable
             Panel1.Visible = False
             loadweb("1")
+        ElseIf My.Application.Info.ProductName = "TryOS" Then
+            FormBorderStyle = FormBorderStyle.None
+            Panel1.Visible = False
+            MaxiButton.Enabled = False
+            MiniButton.Enabled = False
+            loadweb("100")
         Else
             MsgBox("Have you changed the Product Name?", MsgBoxStyle.Information)
             Close()
         End If
-        Panel1.Visible = True
-        FormBorderStyle = FormBorderStyle.None
+        'Panel1.Visible = True
+        'FormBorderStyle = FormBorderStyle.None
     End Sub
 
     Public Sub loadweb(ss As String)
         If ss = "0" Then
+        ElseIf ss = "100" Then
         Else
             'Tab 1
             Dim _1_ As Boolean = My.Computer.FileSystem.FileExists(My.Application.Info.DirectoryPath & "\load1.tabsetting")
@@ -221,37 +229,39 @@ Public Class Internetplusplus
     End Sub
 
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
-        If TextBox2.Text = "" Then
-        Else
-            If TextBox2.Text = "cmd" Then
-                UI.StartCMD("New")
-                'CMD STRING'
-            Else
-                If TextBox2.Text.Contains("https://") = True Then
-                    WebView22.Source = New Uri(TextBox2.Text)
-                Else
-                    WebView22.Source = New Uri("https://" & TextBox2.Text)
-                End If
-            End If
-        End If
+        'If TextBox2.Text = "" Then
+        'Else
+        '    If TextBox2.Text = "cmd" Then
+        '        UI.StartCMD("New")
+        '        'CMD STRING'
+        '    Else
+        '        If TextBox2.Text.Contains("https://") = True Then
+        '            WebView22.Source = New Uri(TextBox2.Text)
+        '        Else
+        '            WebView22.Source = New Uri("https://" & TextBox2.Text)
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView22, TextBox2)
     End Sub
 
     Private Sub TextBox1_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            If TextBox1.Text = "" Then
-            Else
-                If TextBox1.Text = "cmd" Then
-                    UI.StartCMD("New")
-                    'CMD STRING'
-                Else
-                    If TextBox1.Text.Contains("https://") = True Then
-                        WebView21.Source = New Uri(TextBox1.Text)
-                    Else
-                        WebView21.Source = New Uri("https://" & TextBox1.Text)
-                    End If
-                End If
-            End If
-        End If
+        'If e.KeyCode = Keys.Enter Then
+        '    If TextBox1.Text = "" Then
+        '    Else
+        '        If TextBox1.Text = "cmd" Then
+        '            UI.StartCMD("New")
+        '            'CMD STRING'
+        '        Else
+        '            If TextBox1.Text.Contains("https://") = True Then
+        '                WebView21.Source = New Uri(TextBox1.Text)
+        '            Else
+        '                WebView21.Source = New Uri("https://" & TextBox1.Text)
+        '            End If
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView21, TextBox1)
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -259,21 +269,22 @@ Public Class Internetplusplus
     End Sub
 
     Private Sub TextBox2_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox2.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            If TextBox2.Text = "" Then
-            Else
-                If TextBox2.Text = "cmd" Then
-                    UI.StartCMD("New")
-                    'CMD STRING'
-                Else
-                    If TextBox2.Text.Contains("https://") = True Then
-                        WebView22.Source = New Uri(TextBox2.Text)
-                    Else
-                        WebView22.Source = New Uri("https://" & TextBox2.Text)
-                    End If
-                End If
-            End If
-        End If
+        'If e.KeyCode = Keys.Enter Then
+        '    If TextBox2.Text = "" Then
+        '    Else
+        '        If TextBox2.Text = "cmd" Then
+        '            UI.StartCMD("New")
+        '            'CMD STRING'
+        '        Else
+        '            If TextBox2.Text.Contains("https://") = True Then
+        '                WebView22.Source = New Uri(TextBox2.Text)
+        '            Else
+        '                WebView22.Source = New Uri("https://" & TextBox2.Text)
+        '            End If
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView22, TextBox2)
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
@@ -289,37 +300,39 @@ Public Class Internetplusplus
     End Sub
 
     Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
-        If TextBox3.Text = "" Then
-        Else
-            If TextBox3.Text = "cmd" Then
-                UI.StartCMD("New")
-                'CMD STRING'
-            Else
-                If TextBox3.Text.Contains("https://") = True Then
-                    WebView23.Source = New Uri(TextBox3.Text)
-                Else
-                    WebView23.Source = New Uri("https://" & TextBox3.Text)
-                End If
-            End If
-        End If
+        'If TextBox3.Text = "" Then
+        'Else
+        '    If TextBox3.Text = "cmd" Then
+        '        UI.StartCMD("New")
+        '        'CMD STRING'
+        '    Else
+        '        If TextBox3.Text.Contains("https://") = True Then
+        '            WebView23.Source = New Uri(TextBox3.Text)
+        '        Else
+        '            WebView23.Source = New Uri("https://" & TextBox3.Text)
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView23, TextBox3)
     End Sub
 
     Private Sub TextBox3_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox3.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            If TextBox3.Text = "" Then
-            Else
-                If TextBox3.Text = "cmd" Then
-                    UI.StartCMD("New")
-                    'CMD STRING'
-                Else
-                    If TextBox3.Text.Contains("https://") = True Then
-                        WebView23.Source = New Uri(TextBox3.Text)
-                    Else
-                        WebView23.Source = New Uri("https://" & TextBox3.Text)
-                    End If
-                End If
-            End If
-        End If
+        'If e.KeyCode = Keys.Enter Then
+        '    If TextBox3.Text = "" Then
+        '    Else
+        '        If TextBox3.Text = "cmd" Then
+        '            UI.StartCMD("New")
+        '            'CMD STRING'
+        '        Else
+        '            If TextBox3.Text.Contains("https://") = True Then
+        '                WebView23.Source = New Uri(TextBox3.Text)
+        '            Else
+        '                WebView23.Source = New Uri("https://" & TextBox3.Text)
+        '            End If
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView23, TextBox3)
     End Sub
 
     Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
@@ -335,37 +348,39 @@ Public Class Internetplusplus
     End Sub
 
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
-        If TextBox4.Text = "" Then
-        Else
-            If TextBox4.Text = "cmd" Then
-                UI.StartCMD("New")
-                'CMD STRING'
-            Else
-                If TextBox4.Text.Contains("https://") = True Then
-                    WebView24.Source = New Uri(TextBox4.Text)
-                Else
-                    WebView24.Source = New Uri("https://" & TextBox4.Text)
-                End If
-            End If
-        End If
+        'If TextBox4.Text = "" Then
+        'Else
+        '    If TextBox4.Text = "cmd" Then
+        '        UI.StartCMD("New")
+        '        'CMD STRING'
+        '    Else
+        '        If TextBox4.Text.Contains("https://") = True Then
+        '            WebView24.Source = New Uri(TextBox4.Text)
+        '        Else
+        '            WebView24.Source = New Uri("https://" & TextBox4.Text)
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView24, TextBox4)
     End Sub
 
     Private Sub TextBox4_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox4.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            If TextBox4.Text = "" Then
-            Else
-                If TextBox4.Text = "cmd" Then
-                    UI.StartCMD("New")
-                    'CMD STRING'
-                Else
-                    If TextBox4.Text.Contains("https://") = True Then
-                        WebView24.Source = New Uri(TextBox4.Text)
-                    Else
-                        WebView24.Source = New Uri("https://" & TextBox4.Text)
-                    End If
-                End If
-            End If
-        End If
+        'If e.KeyCode = Keys.Enter Then
+        '    If TextBox4.Text = "" Then
+        '    Else
+        '        If TextBox4.Text = "cmd" Then
+        '            UI.StartCMD("New")
+        '            'CMD STRING'
+        '        Else
+        '            If TextBox4.Text.Contains("https://") = True Then
+        '                WebView24.Source = New Uri(TextBox4.Text)
+        '            Else
+        '                WebView24.Source = New Uri("https://" & TextBox4.Text)
+        '            End If
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView24, TextBox4)
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
@@ -381,37 +396,39 @@ Public Class Internetplusplus
     End Sub
 
     Private Sub Button17_Click(sender As Object, e As EventArgs) Handles Button17.Click
-        If TextBox5.Text = "" Then
-        Else
-            If TextBox5.Text = "cmd" Then
-                UI.StartCMD("New")
-                'CMD STRING'
-            Else
-                If TextBox5.Text.Contains("https://") = True Then
-                    WebView25.Source = New Uri(TextBox5.Text)
-                Else
-                    WebView25.Source = New Uri("https://" & TextBox5.Text)
-                End If
-            End If
-        End If
+        'If TextBox5.Text = "" Then
+        'Else
+        '    If TextBox5.Text = "cmd" Then
+        '        UI.StartCMD("New")
+        '        'CMD STRING'
+        '    Else
+        '        If TextBox5.Text.Contains("https://") = True Then
+        '            WebView25.Source = New Uri(TextBox5.Text)
+        '        Else
+        '            WebView25.Source = New Uri("https://" & TextBox5.Text)
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView25, TextBox5)
     End Sub
 
     Private Sub TextBox5_KeyPress(sender As Object, e As KeyEventArgs) Handles TextBox5.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            If TextBox5.Text = "" Then
-            Else
-                If TextBox5.Text = "cmd" Then
-                    UI.StartCMD("New")
-                    'CMD STRING'
-                Else
-                    If TextBox5.Text.Contains("https://") = True Then
-                        WebView25.Source = New Uri(TextBox5.Text)
-                    Else
-                        WebView25.Source = New Uri("https://" & TextBox5.Text)
-                    End If
-                End If
-            End If
-        End If
+        'If e.KeyCode = Keys.Enter Then
+        '    If TextBox5.Text = "" Then
+        '    Else
+        '        If TextBox5.Text = "cmd" Then
+        '            UI.StartCMD("New")
+        '            'CMD STRING'
+        '        Else
+        '            If TextBox5.Text.Contains("https://") = True Then
+        '                WebView25.Source = New Uri(TextBox5.Text)
+        '            Else
+        '                WebView25.Source = New Uri("https://" & TextBox5.Text)
+        '            End If
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView25, TextBox5)
     End Sub
 
     Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
@@ -427,37 +444,39 @@ Public Class Internetplusplus
     End Sub
 
     Private Sub Button21_Click(sender As Object, e As EventArgs) Handles Button21.Click
-        If TextBox6.Text = "" Then
-        Else
-            If TextBox6.Text = "cmd" Then
-                UI.StartCMD("New")
-                'CMD STRING'
-            Else
-                If TextBox6.Text.Contains("https://") = True Then
-                    WebView26.Source = New Uri(TextBox6.Text)
-                Else
-                    WebView26.Source = New Uri("https://" & TextBox6.Text)
-                End If
-            End If
-        End If
+        'If TextBox6.Text = "" Then
+        'Else
+        '    If TextBox6.Text = "cmd" Then
+        '        UI.StartCMD("New")
+        '        'CMD STRING'
+        '    Else
+        '        If TextBox6.Text.Contains("https://") = True Then
+        '            WebView26.Source = New Uri(TextBox6.Text)
+        '        Else
+        '            WebView26.Source = New Uri("https://" & TextBox6.Text)
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView26, TextBox6)
     End Sub
 
     Private Sub TextBox6_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox6.KeyDown
-        If e.KeyCode = Keys.Enter Then
-            If TextBox6.Text = "" Then
-            Else
-                If TextBox6.Text = "cmd" Then
-                    UI.StartCMD("New")
-                    'CMD STRING'
-                Else
-                    If TextBox6.Text.Contains("https://") = True Then
-                        WebView26.Source = New Uri(TextBox6.Text)
-                    Else
-                        WebView26.Source = New Uri("https://" & TextBox6.Text)
-                    End If
-                End If
-            End If
-        End If
+        'If e.KeyCode = Keys.Enter Then
+        '    If TextBox6.Text = "" Then
+        '    Else
+        '        If TextBox6.Text = "cmd" Then
+        '            UI.StartCMD("New")
+        '            'CMD STRING'
+        '        Else
+        '            If TextBox6.Text.Contains("https://") = True Then
+        '                WebView26.Source = New Uri(TextBox6.Text)
+        '            Else
+        '                WebView26.Source = New Uri("https://" & TextBox6.Text)
+        '            End If
+        '        End If
+        '    End If
+        'End If
+        OpenWebpage(WebView26, TextBox6)
     End Sub
 
     Private Sub Internetplusplus_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
@@ -492,5 +511,34 @@ Public Class Internetplusplus
 
     Private Sub WebView26_NavigationCompleted(sender As Object, e As Microsoft.Web.WebView2.Core.CoreWebView2NavigationCompletedEventArgs) Handles WebView26.NavigationCompleted
         TextBox6.Text = WebView26.Source.AbsoluteUri
+    End Sub
+
+    Public Sub OpenWebpage(WebViewName As Microsoft.Web.WebView2.WinForms.WebView2, TextBoxName As TextBox)
+        If TextBoxName.Text = "" Then
+        Else
+            If TextBoxName.Text = "cmd://" Then
+                UI.StartCMD("New")
+                'CMD STRING'
+            Else
+                If TextBoxName.Text.Contains("https://") = True Then
+                    WebViewName.Source = New Uri(TextBox1.Text)
+                Else
+                    If TextBoxName.Text.Contains("http://") = True Then
+                        WebViewName.Source = New Uri("http://" & TextBox1.Text)
+                    Else
+                        If TextBoxName.Text.Contains("file:///") = True Then
+                            WebViewName.Source = New Uri("file:///" & TextBox1.Text)
+                        Else
+                            If TextBoxName.Text.Contains("internet://") = True Then
+                                'WebViewName.Source = New Uri("file:///" & TextBox1.Text)
+                            Else
+                                WebViewName.Source = New Uri("https://" & TextBox1.Text)
+                            End If
+                        End If
+                    End If
+
+                End If
+            End If
+        End If
     End Sub
 End Class

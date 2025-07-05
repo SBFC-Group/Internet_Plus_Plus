@@ -114,7 +114,7 @@ Partial Class Internetplusplus
         Me.WebView21.Dock = System.Windows.Forms.DockStyle.Fill
         Me.WebView21.Location = New System.Drawing.Point(0, 36)
         Me.WebView21.Name = "WebView21"
-        Me.WebView21.Size = New System.Drawing.Size(1014, 412)
+        Me.WebView21.Size = New System.Drawing.Size(1132, 427)
         Me.WebView21.Source = New System.Uri("https://sebs-sw-b.netlify.app/news-sebs-sw.html", System.UriKind.Absolute)
         Me.WebView21.TabIndex = 0
         Me.WebView21.ZoomFactor = 1.0R
@@ -130,7 +130,7 @@ Partial Class Internetplusplus
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
         Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1022, 59)
+        Me.Panel1.Size = New System.Drawing.Size(1140, 59)
         Me.Panel1.TabIndex = 1
         Me.Panel1.Visible = False
         '
@@ -152,7 +152,7 @@ Partial Class Internetplusplus
         Me.MiniButton.Dock = System.Windows.Forms.DockStyle.Right
         Me.MiniButton.FlatAppearance.BorderSize = 0
         Me.MiniButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MiniButton.Location = New System.Drawing.Point(845, 0)
+        Me.MiniButton.Location = New System.Drawing.Point(963, 0)
         Me.MiniButton.Name = "MiniButton"
         Me.MiniButton.Size = New System.Drawing.Size(59, 59)
         Me.MiniButton.TabIndex = 3
@@ -160,12 +160,12 @@ Partial Class Internetplusplus
         '
         'MaxiButton
         '
-        Me.MaxiButton.BackgroundImage = Global.Interplusplus4_0New.My.Resources.Resources._1266721
+        Me.MaxiButton.BackgroundImage = Global.Interplusplus4_0New.My.Resources.MainResourceFile._1266721
         Me.MaxiButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MaxiButton.Dock = System.Windows.Forms.DockStyle.Right
         Me.MaxiButton.FlatAppearance.BorderSize = 0
         Me.MaxiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.MaxiButton.Location = New System.Drawing.Point(904, 0)
+        Me.MaxiButton.Location = New System.Drawing.Point(1022, 0)
         Me.MaxiButton.Name = "MaxiButton"
         Me.MaxiButton.Size = New System.Drawing.Size(59, 59)
         Me.MaxiButton.TabIndex = 2
@@ -173,12 +173,12 @@ Partial Class Internetplusplus
         '
         'CloseButton
         '
-        Me.CloseButton.BackgroundImage = Global.Interplusplus4_0New.My.Resources.Resources._2920659_2
+        Me.CloseButton.BackgroundImage = Global.Interplusplus4_0New.My.Resources.MainResourceFile._2920659_2
         Me.CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CloseButton.Dock = System.Windows.Forms.DockStyle.Right
         Me.CloseButton.FlatAppearance.BorderSize = 0
         Me.CloseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.CloseButton.Location = New System.Drawing.Point(963, 0)
+        Me.CloseButton.Location = New System.Drawing.Point(1081, 0)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.Size = New System.Drawing.Size(59, 59)
         Me.CloseButton.TabIndex = 1
@@ -206,7 +206,7 @@ Partial Class Internetplusplus
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
         Me.ToolStripMenuItem2.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(180, 22)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(121, 22)
         Me.ToolStripMenuItem2.Text = "1-"
         '
         'TabControl1
@@ -223,7 +223,7 @@ Partial Class Internetplusplus
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(0)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1022, 479)
+        Me.TabControl1.Size = New System.Drawing.Size(1140, 494)
         Me.TabControl1.TabIndex = 2
         '
         'TabPage1
@@ -232,7 +232,7 @@ Partial Class Internetplusplus
         Me.TabPage1.Controls.Add(Me.Panel2)
         Me.TabPage1.Location = New System.Drawing.Point(4, 27)
         Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Size = New System.Drawing.Size(1014, 448)
+        Me.TabPage1.Size = New System.Drawing.Size(1132, 463)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Tab 1"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -248,7 +248,7 @@ Partial Class Internetplusplus
         Me.Panel2.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel2.Location = New System.Drawing.Point(0, 0)
         Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1014, 36)
+        Me.Panel2.Size = New System.Drawing.Size(1132, 36)
         Me.Panel2.TabIndex = 1
         '
         'Button4
@@ -269,7 +269,7 @@ Partial Class Internetplusplus
         Me.TextBox1.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(327, 3)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(684, 30)
+        Me.TextBox1.Size = New System.Drawing.Size(802, 30)
         Me.TextBox1.TabIndex = 3
         '
         'Button3
@@ -779,7 +779,7 @@ Partial Class Internetplusplus
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1022, 538)
+        Me.ClientSize = New System.Drawing.Size(1140, 553)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.Panel1)
         Me.KeyPreview = True

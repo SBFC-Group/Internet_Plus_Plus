@@ -11,8 +11,8 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("Internet++")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("SBFC Group")>
-<Assembly: AssemblyProduct("Internet++")>
-<Assembly: AssemblyCopyright("Copyright © SBFC Group 2024")>
+<Assembly: AssemblyProduct("TryOS")>
+<Assembly: AssemblyCopyright("Copyright © SBFC Group 2025")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")>
 
-<Assembly: AssemblyVersion("4.0.0.0")>
-<Assembly: AssemblyFileVersion("4.0.0.0")>
+<Assembly: AssemblyVersion("4.1.0.0")>
+<Assembly: AssemblyFileVersion("4.1.0.0")>
