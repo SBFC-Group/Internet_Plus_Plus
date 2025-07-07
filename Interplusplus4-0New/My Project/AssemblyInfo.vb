@@ -11,7 +11,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("Internet++")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("SBFC Group")>
-<Assembly: AssemblyProduct("TryOS")>
+<Assembly: AssemblyProduct("Internet++")>
 <Assembly: AssemblyCopyright("Copyright © SBFC Group 2025")>
 <Assembly: AssemblyTrademark("")>
 

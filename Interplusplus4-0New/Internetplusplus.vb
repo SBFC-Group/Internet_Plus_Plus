@@ -1,61 +1,92 @@
 ﻿Imports System.Runtime.InteropServices
+Imports System.Reflection
 
 Public Class Internetplusplus
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         'Tab 1
-        If WebView21.CoreWebView2.DocumentTitle = Nothing Then
-            TabPage1.Text = "Tab 1"
-        Else
-            TabPage1.Text = WebView21.CoreWebView2.DocumentTitle
-            If TabPage1.Text = "News about Sebs SW and new projects" Then
-                TabPage1.Text = "News.."
+        Try
+            If WebView21.CoreWebView2.DocumentTitle = Nothing Then
+                TabPage1.Text = "Tab 1"
+            Else
+                TabPage1.Text = WebView21.CoreWebView2.DocumentTitle
+                If TabPage1.Text = "News about Sebs SW and new projects" Then
+                    TabPage1.Text = "News.."
+                End If
             End If
-        End If
+        Catch ex As Exception
+
+        End Try
+
         'Tab 2
-        If WebView22.CoreWebView2.DocumentTitle = Nothing Then
-            TabPage2.Text = "Tab 2"
-        Else
-            TabPage2.Text = WebView22.CoreWebView2.DocumentTitle
-            If TabPage2.Text = "News about Sebs SW and new projects" Then
-                TabPage2.Text = "News.."
+        Try
+            If WebView22.CoreWebView2.DocumentTitle = Nothing Then
+                TabPage2.Text = "Tab 2"
+            Else
+                TabPage2.Text = WebView22.CoreWebView2.DocumentTitle
+                If TabPage2.Text = "News about Sebs SW and new projects" Then
+                    TabPage2.Text = "News.."
+                End If
             End If
-        End If
+        Catch ex As Exception
+
+        End Try
+
         'Tab 3
-        If WebView23.CoreWebView2.DocumentTitle = Nothing Then
-            TabPage3.Text = "Tab 3"
-        Else
-            TabPage3.Text = WebView23.CoreWebView2.DocumentTitle
-            If TabPage3.Text = "News about Sebs SW and new projects" Then
-                TabPage3.Text = "News.."
+        Try
+            If WebView23.CoreWebView2.DocumentTitle = Nothing Then
+                TabPage3.Text = "Tab 3"
+            Else
+                TabPage3.Text = WebView23.CoreWebView2.DocumentTitle
+                If TabPage3.Text = "News about Sebs SW and new projects" Then
+                    TabPage3.Text = "News.."
+                End If
             End If
-        End If
+        Catch ex As Exception
+
+        End Try
+
         'Tab 4
-        If WebView24.CoreWebView2.DocumentTitle = Nothing Then
-            TabPage4.Text = "Tab 4"
-        Else
-            TabPage4.Text = WebView24.CoreWebView2.DocumentTitle
-            If TabPage4.Text = "News about Sebs SW and new projects" Then
-                TabPage4.Text = "News.."
+        Try
+            If WebView24.CoreWebView2.DocumentTitle = Nothing Then
+                TabPage4.Text = "Tab 4"
+            Else
+                TabPage4.Text = WebView24.CoreWebView2.DocumentTitle
+                If TabPage4.Text = "News about Sebs SW and new projects" Then
+                    TabPage4.Text = "News.."
+                End If
             End If
-        End If
+        Catch ex As Exception
+
+        End Try
+
         'Tab 5
-        If WebView25.CoreWebView2.DocumentTitle = Nothing Then
-            TabPage5.Text = "Tab 5"
-        Else
-            TabPage5.Text = WebView25.CoreWebView2.DocumentTitle
-            If TabPage5.Text = "News about Sebs SW and new projects" Then
-                TabPage5.Text = "News.."
+        Try
+            If WebView25.CoreWebView2.DocumentTitle = Nothing Then
+                TabPage5.Text = "Tab 5"
+            Else
+                TabPage5.Text = WebView25.CoreWebView2.DocumentTitle
+                If TabPage5.Text = "News about Sebs SW and new projects" Then
+                    TabPage5.Text = "News.."
+                End If
             End If
-        End If
+        Catch ex As Exception
+
+        End Try
+
         'Tab 6
-        If WebView26.CoreWebView2.DocumentTitle = Nothing Then
-            TabPage6.Text = "Tab 6"
-        Else
-            TabPage6.Text = WebView26.CoreWebView2.DocumentTitle
-            If TabPage6.Text = "News about Sebs SW and new projects" Then
-                TabPage6.Text = "News.."
+        Try
+            If WebView26.CoreWebView2.DocumentTitle = Nothing Then
+                TabPage6.Text = "Tab 6"
+            Else
+                TabPage6.Text = WebView26.CoreWebView2.DocumentTitle
+                If TabPage6.Text = "News about Sebs SW and new projects" Then
+                    TabPage6.Text = "News.."
+                End If
             End If
-        End If
+        Catch ex As Exception
+
+        End Try
+
 
         'TabPage1.Text = WebView21.CoreWebView2.DocumentTitle
     End Sub
@@ -261,7 +292,9 @@ Public Class Internetplusplus
         '        End If
         '    End If
         'End If
-        OpenWebpage(WebView21, TextBox1)
+        If e.KeyCode = Keys.Enter Then
+            OpenWebpage(WebView21, TextBox1)
+        End If
     End Sub
 
     Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
@@ -284,7 +317,9 @@ Public Class Internetplusplus
         '        End If
         '    End If
         'End If
-        OpenWebpage(WebView22, TextBox2)
+        If e.KeyCode = Keys.Enter Then
+            OpenWebpage(WebView22, TextBox2)
+        End If
     End Sub
 
     Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
@@ -332,7 +367,9 @@ Public Class Internetplusplus
         '        End If
         '    End If
         'End If
-        OpenWebpage(WebView23, TextBox3)
+        If e.KeyCode = Keys.Enter Then
+            OpenWebpage(WebView23, TextBox3)
+        End If
     End Sub
 
     Private Sub Button16_Click(sender As Object, e As EventArgs) Handles Button16.Click
@@ -380,7 +417,9 @@ Public Class Internetplusplus
         '        End If
         '    End If
         'End If
-        OpenWebpage(WebView24, TextBox4)
+        If e.KeyCode = Keys.Enter Then
+            OpenWebpage(WebView24, TextBox4)
+        End If
     End Sub
 
     Private Sub Button20_Click(sender As Object, e As EventArgs) Handles Button20.Click
@@ -428,7 +467,9 @@ Public Class Internetplusplus
         '        End If
         '    End If
         'End If
-        OpenWebpage(WebView25, TextBox5)
+        If e.KeyCode = Keys.Enter Then
+            OpenWebpage(WebView25, TextBox5)
+        End If
     End Sub
 
     Private Sub Button24_Click(sender As Object, e As EventArgs) Handles Button24.Click
@@ -476,7 +517,10 @@ Public Class Internetplusplus
         '        End If
         '    End If
         'End If
-        OpenWebpage(WebView26, TextBox6)
+        If e.KeyCode = Keys.Enter Then
+            OpenWebpage(WebView26, TextBox6)
+        End If
+
     End Sub
 
     Private Sub Internetplusplus_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
@@ -530,6 +574,7 @@ Public Class Internetplusplus
                             WebViewName.Source = New Uri("file:///" & TextBox1.Text)
                         Else
                             If TextBoxName.Text.Contains("internet://") = True Then
+                                GetSettingsPage(WebViewName)
                                 'WebViewName.Source = New Uri("file:///" & TextBox1.Text)
                             Else
                                 WebViewName.Source = New Uri("https://" & TextBox1.Text)
@@ -540,5 +585,101 @@ Public Class Internetplusplus
                 End If
             End If
         End If
+    End Sub
+
+    Private Sub GetSettingsPage(WebViewThingy As Microsoft.Web.WebView2.WinForms.WebView2)
+        Dim exefile As String = Application.ExecutablePath
+        exefile = exefile & ".WebView2"
+
+
+        'MsgBox(exefile)
+    End Sub
+
+    Private WebView21Core As Microsoft.Web.WebView2.Core.CoreWebView2
+
+    Private Sub WebView21_CoreWebView2InitializationCompleted(sender As Object, e As Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs) Handles WebView21.CoreWebView2InitializationCompleted
+        If e.IsSuccess = True Then
+            WebView21.CoreWebView2.Settings.AreDefaultScriptDialogsEnabled = False
+            'WebView21.CoreWebView2.OpenDefaultDownloadDialog()
+            WebView21Core = WebView21.CoreWebView2
+        End If
+    End Sub
+
+    Private WebView22Core As Microsoft.Web.WebView2.Core.CoreWebView2
+
+    Private Sub WebView22_CoreWebView2InitializationCompleted(sender As Object, e As Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs) Handles WebView22.CoreWebView2InitializationCompleted
+        If e.IsSuccess = True Then
+            WebView22.CoreWebView2.Settings.AreDefaultScriptDialogsEnabled = False
+            'WebView22.CoreWebView2.OpenDefaultDownloadDialog()
+            WebView22Core = WebView22.CoreWebView2
+        End If
+    End Sub
+
+    Private WebView23Core As Microsoft.Web.WebView2.Core.CoreWebView2
+
+    Private Sub WebView23_CoreWebView2InitializationCompleted(sender As Object, e As Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs) Handles WebView23.CoreWebView2InitializationCompleted
+        If e.IsSuccess = True Then
+            WebView23.CoreWebView2.Settings.AreDefaultScriptDialogsEnabled = False
+            'WebView23.CoreWebView2.OpenDefaultDownloadDialog()
+            WebView23Core = WebView23.CoreWebView2
+        End If
+    End Sub
+
+    Private WebView24Core As Microsoft.Web.WebView2.Core.CoreWebView2
+
+    Private Sub WebView24_CoreWebView2InitializationCompleted(sender As Object, e As Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs) Handles WebView24.CoreWebView2InitializationCompleted
+        If e.IsSuccess = True Then
+            WebView24.CoreWebView2.Settings.AreDefaultScriptDialogsEnabled = False
+            'WebView24.CoreWebView2.OpenDefaultDownloadDialog()
+            WebView24Core = WebView24.CoreWebView2
+        End If
+    End Sub
+
+    Private WebView25Core As Microsoft.Web.WebView2.Core.CoreWebView2
+
+    Private Sub WebView25_CoreWebView2InitializationCompleted(sender As Object, e As Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs) Handles WebView25.CoreWebView2InitializationCompleted
+        If e.IsSuccess = True Then
+            WebView25.CoreWebView2.Settings.AreDefaultScriptDialogsEnabled = False
+            'WebView25.CoreWebView2.OpenDefaultDownloadDialog()
+            WebView25Core = WebView25.CoreWebView2
+        End If
+    End Sub
+
+    Private WebView26Core As Microsoft.Web.WebView2.Core.CoreWebView2
+
+    Private Sub WebView26_CoreWebView2InitializationCompleted(sender As Object, e As Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs) Handles WebView26.CoreWebView2InitializationCompleted
+        If e.IsSuccess = True Then
+            WebView26.CoreWebView2.Settings.AreDefaultScriptDialogsEnabled = False
+            'WebView26.CoreWebView2.OpenDefaultDownloadDialog()
+            WebView26Core = WebView26.CoreWebView2
+        End If
+    End Sub
+
+    Private Sub WebView21_WebMessageReceived(sender As Object, e As Microsoft.Web.WebView2.Core.CoreWebView2WebMessageReceivedEventArgs) Handles WebView21.WebMessageReceived
+        MsgBox(e.TryGetWebMessageAsString, MsgBoxStyle.Information, e.Source)
+    End Sub
+
+    Private Sub Button25_Click(sender As Object, e As EventArgs) Handles Button25.Click
+        WebView21Core.OpenDefaultDownloadDialog()
+    End Sub
+
+    Private Sub Button26_Click(sender As Object, e As EventArgs) Handles Button26.Click
+        WebView22Core.OpenDefaultDownloadDialog()
+    End Sub
+
+    Private Sub Button27_Click(sender As Object, e As EventArgs) Handles Button27.Click
+        WebView23Core.OpenDefaultDownloadDialog()
+    End Sub
+
+    Private Sub Button28_Click(sender As Object, e As EventArgs) Handles Button28.Click
+        WebView24Core.OpenDefaultDownloadDialog()
+    End Sub
+
+    Private Sub Button29_Click(sender As Object, e As EventArgs) Handles Button29.Click
+        WebView25Core.OpenDefaultDownloadDialog()
+    End Sub
+
+    Private Sub Button30_Click(sender As Object, e As EventArgs) Handles Button30.Click
+        WebView26Core.OpenDefaultDownloadDialog()
     End Sub
 End Class

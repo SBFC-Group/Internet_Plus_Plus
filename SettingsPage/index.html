@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings GUI</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f3f4f6;
+      color: #111827;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .settings-card {
+      background-color: white;
+      padding: 2rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .settings-header {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .setting {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 1rem 0;
+    }
+
+    .setting label {
+      font-weight: 500;
+    }
+
+    .toggle {
+      position: relative;
+      width: 50px;
+      height: 26px;
+    }
+
+    .toggle input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      background-color: #ccc;
+      border-radius: 9999px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: 0.4s;
+    }
+
+    .slider::before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      border-radius: 50%;
+      transition: 0.4s;
+    }
+
+    input:checked + .slider {
+      background-color: #4f46e5;
+    }
+
+    input:checked + .slider::before {
+      transform: translateX(24px);
+    }
+
+    .dropdown {
+      padding: 0.5rem;
+      border-radius: 0.5rem;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .footer {
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .btn {
+      background-color: #4f46e5;
+      color: white;
+      border: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #3730a3;
+    }
+  </style>
+</head>
+<body>
+  <div class="settings-card">
+    <div class="settings-header">Settings</div>
+
+    <div class="setting">
+      <label for="darkMode">Dark Mode</label>
+      <label class="toggle">
+        <input type="checkbox" id="darkMode">
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="setting">
+      <label for="notifications">Notifications</label>
+      <label class="toggle">
+        <input type="checkbox" id="notifications" checked>
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="setting">
+      <label for="language">Language</label>
+      <select id="language" class="dropdown">
+        <option value="en">English</option>
+        <option value="es">Spanish</option>
+        <option value="de">German</option>
+      </select>
+    </div>
+
+    <div class="footer">
+      <button class="btn" onclick="saveSettings()">Save Settings</button>
+    </div>
+  </div>
+
+  <script>
+    function saveSettings() {
+      const darkMode = document.getElementById('darkMode').checked;
+      const notifications = document.getElementById('notifications').checked;
+      const language = document.getElementById('language').value;
+
+      alert(`Saved!\nDark Mode: ${darkMode}\nNotifications: ${notifications}\nLanguage: ${language}`);
+    }
+  </script>
+</body>
+</html>

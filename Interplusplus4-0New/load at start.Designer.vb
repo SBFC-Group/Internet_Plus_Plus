@@ -219,7 +219,7 @@ Partial Class load_at_start
         'Button1
         '
         Me.Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Button1.BackgroundImage = Global.Interplusplus4_0New.My.Resources.Resources._2920659_2
+        Me.Button1.BackgroundImage = Global.Internetplusplus.My.Resources.Resources._2920659_2
         Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.Button1.FlatAppearance.BorderSize = 0
         Me.Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat

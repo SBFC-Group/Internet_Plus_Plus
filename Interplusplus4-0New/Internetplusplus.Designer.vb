@@ -35,6 +35,7 @@ Partial Class Internetplusplus
         Me.TabControl1 = New System.Windows.Forms.TabControl()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Button25 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -82,6 +83,11 @@ Partial Class Internetplusplus
         Me.Button24 = New System.Windows.Forms.Button()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.Button26 = New System.Windows.Forms.Button()
+        Me.Button27 = New System.Windows.Forms.Button()
+        Me.Button28 = New System.Windows.Forms.Button()
+        Me.Button29 = New System.Windows.Forms.Button()
+        Me.Button30 = New System.Windows.Forms.Button()
         CType(Me.WebView21, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -136,7 +142,7 @@ Partial Class Internetplusplus
         '
         'PictureBox1
         '
-        Me.PictureBox1.BackgroundImage = Global.Interplusplus4_0New.My.Resources.Resources.internet_world_wide_web_www_globe_communication_website_browser_network_connection_icon_195710
+        Me.PictureBox1.BackgroundImage = Global.Internetplusplus.My.Resources.Resources.internet_world_wide_web_www_globe_communication_website_browser_network_connection_icon_195710
         Me.PictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
@@ -147,7 +153,7 @@ Partial Class Internetplusplus
         '
         'MiniButton
         '
-        Me.MiniButton.BackgroundImage = Global.Interplusplus4_0New.My.Resources.Resources.minimize2
+        Me.MiniButton.BackgroundImage = Global.Internetplusplus.My.Resources.Resources.minimize2
         Me.MiniButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MiniButton.Dock = System.Windows.Forms.DockStyle.Right
         Me.MiniButton.FlatAppearance.BorderSize = 0
@@ -160,7 +166,7 @@ Partial Class Internetplusplus
         '
         'MaxiButton
         '
-        Me.MaxiButton.BackgroundImage = Global.Interplusplus4_0New.My.Resources.MainResourceFile._1266721
+        Me.MaxiButton.BackgroundImage = Global.Internetplusplus.My.Resources.MainResourceFile._1266721
         Me.MaxiButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.MaxiButton.Dock = System.Windows.Forms.DockStyle.Right
         Me.MaxiButton.FlatAppearance.BorderSize = 0
@@ -173,7 +179,7 @@ Partial Class Internetplusplus
         '
         'CloseButton
         '
-        Me.CloseButton.BackgroundImage = Global.Interplusplus4_0New.My.Resources.MainResourceFile._2920659_2
+        Me.CloseButton.BackgroundImage = Global.Internetplusplus.My.Resources.MainResourceFile._2920659_2
         Me.CloseButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.CloseButton.Dock = System.Windows.Forms.DockStyle.Right
         Me.CloseButton.FlatAppearance.BorderSize = 0
@@ -240,6 +246,7 @@ Partial Class Internetplusplus
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.Silver
+        Me.Panel2.Controls.Add(Me.Button25)
         Me.Panel2.Controls.Add(Me.Button4)
         Me.Panel2.Controls.Add(Me.TextBox1)
         Me.Panel2.Controls.Add(Me.Button3)
@@ -250,6 +257,19 @@ Partial Class Internetplusplus
         Me.Panel2.Name = "Panel2"
         Me.Panel2.Size = New System.Drawing.Size(1132, 36)
         Me.Panel2.TabIndex = 1
+        '
+        'Button25
+        '
+        Me.Button25.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button25.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button25.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button25.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button25.Location = New System.Drawing.Point(1035, 3)
+        Me.Button25.Name = "Button25"
+        Me.Button25.Size = New System.Drawing.Size(94, 30)
+        Me.Button25.TabIndex = 5
+        Me.Button25.Text = "Downloads"
+        Me.Button25.UseVisualStyleBackColor = False
         '
         'Button4
         '
@@ -266,10 +286,11 @@ Partial Class Internetplusplus
         '
         Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox1.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox1.Location = New System.Drawing.Point(327, 3)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(802, 30)
+        Me.TextBox1.Size = New System.Drawing.Size(702, 30)
         Me.TextBox1.TabIndex = 3
         '
         'Button3
@@ -311,7 +332,7 @@ Partial Class Internetplusplus
         Me.TabPage2.Controls.Add(Me.Panel3)
         Me.TabPage2.Location = New System.Drawing.Point(4, 27)
         Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Size = New System.Drawing.Size(1014, 448)
+        Me.TabPage2.Size = New System.Drawing.Size(1132, 463)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Tab 2"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -324,7 +345,7 @@ Partial Class Internetplusplus
         Me.WebView22.Dock = System.Windows.Forms.DockStyle.Fill
         Me.WebView22.Location = New System.Drawing.Point(0, 36)
         Me.WebView22.Name = "WebView22"
-        Me.WebView22.Size = New System.Drawing.Size(1014, 412)
+        Me.WebView22.Size = New System.Drawing.Size(1132, 427)
         Me.WebView22.Source = New System.Uri("https://sebs-sw-b.netlify.app/news-sebs-sw.html", System.UriKind.Absolute)
         Me.WebView22.TabIndex = 2
         Me.WebView22.ZoomFactor = 1.0R
@@ -332,6 +353,7 @@ Partial Class Internetplusplus
         'Panel3
         '
         Me.Panel3.BackColor = System.Drawing.Color.Silver
+        Me.Panel3.Controls.Add(Me.Button26)
         Me.Panel3.Controls.Add(Me.Button5)
         Me.Panel3.Controls.Add(Me.TextBox2)
         Me.Panel3.Controls.Add(Me.Button6)
@@ -340,7 +362,7 @@ Partial Class Internetplusplus
         Me.Panel3.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel3.Location = New System.Drawing.Point(0, 0)
         Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1014, 36)
+        Me.Panel3.Size = New System.Drawing.Size(1132, 36)
         Me.Panel3.TabIndex = 3
         '
         'Button5
@@ -356,12 +378,12 @@ Partial Class Internetplusplus
         '
         'TextBox2
         '
-        Me.TextBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox2.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox2.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.Location = New System.Drawing.Point(327, 3)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(684, 30)
+        Me.TextBox2.Size = New System.Drawing.Size(702, 30)
         Me.TextBox2.TabIndex = 3
         '
         'Button6
@@ -403,7 +425,7 @@ Partial Class Internetplusplus
         Me.TabPage3.Controls.Add(Me.Panel4)
         Me.TabPage3.Location = New System.Drawing.Point(4, 27)
         Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Size = New System.Drawing.Size(1014, 448)
+        Me.TabPage3.Size = New System.Drawing.Size(1132, 463)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Tab 3"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -416,7 +438,7 @@ Partial Class Internetplusplus
         Me.WebView23.Dock = System.Windows.Forms.DockStyle.Fill
         Me.WebView23.Location = New System.Drawing.Point(0, 36)
         Me.WebView23.Name = "WebView23"
-        Me.WebView23.Size = New System.Drawing.Size(1014, 412)
+        Me.WebView23.Size = New System.Drawing.Size(1132, 427)
         Me.WebView23.Source = New System.Uri("https://sebs-sw-b.netlify.app/news-sebs-sw.html", System.UriKind.Absolute)
         Me.WebView23.TabIndex = 2
         Me.WebView23.ZoomFactor = 1.0R
@@ -424,6 +446,7 @@ Partial Class Internetplusplus
         'Panel4
         '
         Me.Panel4.BackColor = System.Drawing.Color.Silver
+        Me.Panel4.Controls.Add(Me.Button27)
         Me.Panel4.Controls.Add(Me.Button9)
         Me.Panel4.Controls.Add(Me.TextBox3)
         Me.Panel4.Controls.Add(Me.Button10)
@@ -432,7 +455,7 @@ Partial Class Internetplusplus
         Me.Panel4.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel4.Location = New System.Drawing.Point(0, 0)
         Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1014, 36)
+        Me.Panel4.Size = New System.Drawing.Size(1132, 36)
         Me.Panel4.TabIndex = 3
         '
         'Button9
@@ -450,10 +473,11 @@ Partial Class Internetplusplus
         '
         Me.TextBox3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox3.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox3.Location = New System.Drawing.Point(327, 3)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(684, 30)
+        Me.TextBox3.Size = New System.Drawing.Size(702, 30)
         Me.TextBox3.TabIndex = 3
         '
         'Button10
@@ -495,7 +519,7 @@ Partial Class Internetplusplus
         Me.TabPage4.Controls.Add(Me.Panel5)
         Me.TabPage4.Location = New System.Drawing.Point(4, 27)
         Me.TabPage4.Name = "TabPage4"
-        Me.TabPage4.Size = New System.Drawing.Size(1014, 448)
+        Me.TabPage4.Size = New System.Drawing.Size(1132, 463)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Tab 4"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -508,7 +532,7 @@ Partial Class Internetplusplus
         Me.WebView24.Dock = System.Windows.Forms.DockStyle.Fill
         Me.WebView24.Location = New System.Drawing.Point(0, 36)
         Me.WebView24.Name = "WebView24"
-        Me.WebView24.Size = New System.Drawing.Size(1014, 412)
+        Me.WebView24.Size = New System.Drawing.Size(1132, 427)
         Me.WebView24.Source = New System.Uri("https://sebs-sw-b.netlify.app/news-sebs-sw.html", System.UriKind.Absolute)
         Me.WebView24.TabIndex = 2
         Me.WebView24.ZoomFactor = 1.0R
@@ -516,6 +540,7 @@ Partial Class Internetplusplus
         'Panel5
         '
         Me.Panel5.BackColor = System.Drawing.Color.Silver
+        Me.Panel5.Controls.Add(Me.Button28)
         Me.Panel5.Controls.Add(Me.Button13)
         Me.Panel5.Controls.Add(Me.TextBox4)
         Me.Panel5.Controls.Add(Me.Button14)
@@ -524,7 +549,7 @@ Partial Class Internetplusplus
         Me.Panel5.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel5.Location = New System.Drawing.Point(0, 0)
         Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1014, 36)
+        Me.Panel5.Size = New System.Drawing.Size(1132, 36)
         Me.Panel5.TabIndex = 3
         '
         'Button13
@@ -542,10 +567,11 @@ Partial Class Internetplusplus
         '
         Me.TextBox4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox4.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox4.Location = New System.Drawing.Point(327, 3)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(684, 30)
+        Me.TextBox4.Size = New System.Drawing.Size(702, 30)
         Me.TextBox4.TabIndex = 3
         '
         'Button14
@@ -587,7 +613,7 @@ Partial Class Internetplusplus
         Me.TabPage5.Controls.Add(Me.Panel6)
         Me.TabPage5.Location = New System.Drawing.Point(4, 27)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Size = New System.Drawing.Size(1014, 448)
+        Me.TabPage5.Size = New System.Drawing.Size(1132, 463)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Tab 5"
         Me.TabPage5.UseVisualStyleBackColor = True
@@ -600,7 +626,7 @@ Partial Class Internetplusplus
         Me.WebView25.Dock = System.Windows.Forms.DockStyle.Fill
         Me.WebView25.Location = New System.Drawing.Point(0, 36)
         Me.WebView25.Name = "WebView25"
-        Me.WebView25.Size = New System.Drawing.Size(1014, 412)
+        Me.WebView25.Size = New System.Drawing.Size(1132, 427)
         Me.WebView25.Source = New System.Uri("https://sebs-sw-b.netlify.app/news-sebs-sw.html", System.UriKind.Absolute)
         Me.WebView25.TabIndex = 2
         Me.WebView25.ZoomFactor = 1.0R
@@ -608,6 +634,7 @@ Partial Class Internetplusplus
         'Panel6
         '
         Me.Panel6.BackColor = System.Drawing.Color.Silver
+        Me.Panel6.Controls.Add(Me.Button29)
         Me.Panel6.Controls.Add(Me.Button17)
         Me.Panel6.Controls.Add(Me.TextBox5)
         Me.Panel6.Controls.Add(Me.Button18)
@@ -616,7 +643,7 @@ Partial Class Internetplusplus
         Me.Panel6.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel6.Location = New System.Drawing.Point(0, 0)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1014, 36)
+        Me.Panel6.Size = New System.Drawing.Size(1132, 36)
         Me.Panel6.TabIndex = 3
         '
         'Button17
@@ -634,10 +661,11 @@ Partial Class Internetplusplus
         '
         Me.TextBox5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox5.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox5.Location = New System.Drawing.Point(327, 3)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(684, 30)
+        Me.TextBox5.Size = New System.Drawing.Size(702, 30)
         Me.TextBox5.TabIndex = 3
         '
         'Button18
@@ -679,7 +707,7 @@ Partial Class Internetplusplus
         Me.TabPage6.Controls.Add(Me.Panel7)
         Me.TabPage6.Location = New System.Drawing.Point(4, 27)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Size = New System.Drawing.Size(1014, 448)
+        Me.TabPage6.Size = New System.Drawing.Size(1132, 463)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "Tab 6"
         Me.TabPage6.UseVisualStyleBackColor = True
@@ -692,7 +720,7 @@ Partial Class Internetplusplus
         Me.WebView26.Dock = System.Windows.Forms.DockStyle.Fill
         Me.WebView26.Location = New System.Drawing.Point(0, 36)
         Me.WebView26.Name = "WebView26"
-        Me.WebView26.Size = New System.Drawing.Size(1014, 412)
+        Me.WebView26.Size = New System.Drawing.Size(1132, 427)
         Me.WebView26.Source = New System.Uri("https://sebs-sw-b.netlify.app/news-sebs-sw.html", System.UriKind.Absolute)
         Me.WebView26.TabIndex = 2
         Me.WebView26.ZoomFactor = 1.0R
@@ -700,6 +728,7 @@ Partial Class Internetplusplus
         'Panel7
         '
         Me.Panel7.BackColor = System.Drawing.Color.Silver
+        Me.Panel7.Controls.Add(Me.Button30)
         Me.Panel7.Controls.Add(Me.Button21)
         Me.Panel7.Controls.Add(Me.TextBox6)
         Me.Panel7.Controls.Add(Me.Button22)
@@ -708,7 +737,7 @@ Partial Class Internetplusplus
         Me.Panel7.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel7.Location = New System.Drawing.Point(0, 0)
         Me.Panel7.Name = "Panel7"
-        Me.Panel7.Size = New System.Drawing.Size(1014, 36)
+        Me.Panel7.Size = New System.Drawing.Size(1132, 36)
         Me.Panel7.TabIndex = 3
         '
         'Button21
@@ -726,10 +755,11 @@ Partial Class Internetplusplus
         '
         Me.TextBox6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TextBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.TextBox6.Font = New System.Drawing.Font("Trebuchet MS", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox6.Location = New System.Drawing.Point(327, 3)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(684, 30)
+        Me.TextBox6.Size = New System.Drawing.Size(702, 30)
         Me.TextBox6.TabIndex = 3
         '
         'Button22
@@ -774,6 +804,71 @@ Partial Class Internetplusplus
         '
         Me.Timer2.Enabled = True
         Me.Timer2.Interval = 1000
+        '
+        'Button26
+        '
+        Me.Button26.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button26.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button26.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button26.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button26.Location = New System.Drawing.Point(1035, 3)
+        Me.Button26.Name = "Button26"
+        Me.Button26.Size = New System.Drawing.Size(94, 30)
+        Me.Button26.TabIndex = 6
+        Me.Button26.Text = "Downloads"
+        Me.Button26.UseVisualStyleBackColor = False
+        '
+        'Button27
+        '
+        Me.Button27.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button27.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button27.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button27.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button27.Location = New System.Drawing.Point(1035, 3)
+        Me.Button27.Name = "Button27"
+        Me.Button27.Size = New System.Drawing.Size(94, 30)
+        Me.Button27.TabIndex = 6
+        Me.Button27.Text = "Downloads"
+        Me.Button27.UseVisualStyleBackColor = False
+        '
+        'Button28
+        '
+        Me.Button28.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button28.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button28.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button28.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button28.Location = New System.Drawing.Point(1035, 3)
+        Me.Button28.Name = "Button28"
+        Me.Button28.Size = New System.Drawing.Size(94, 30)
+        Me.Button28.TabIndex = 6
+        Me.Button28.Text = "Downloads"
+        Me.Button28.UseVisualStyleBackColor = False
+        '
+        'Button29
+        '
+        Me.Button29.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button29.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button29.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button29.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button29.Location = New System.Drawing.Point(1035, 3)
+        Me.Button29.Name = "Button29"
+        Me.Button29.Size = New System.Drawing.Size(94, 30)
+        Me.Button29.TabIndex = 6
+        Me.Button29.Text = "Downloads"
+        Me.Button29.UseVisualStyleBackColor = False
+        '
+        'Button30
+        '
+        Me.Button30.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Button30.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button30.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button30.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Button30.Location = New System.Drawing.Point(1035, 3)
+        Me.Button30.Name = "Button30"
+        Me.Button30.Size = New System.Drawing.Size(94, 30)
+        Me.Button30.TabIndex = 6
+        Me.Button30.Text = "Downloads"
+        Me.Button30.UseVisualStyleBackColor = False
         '
         'Internetplusplus
         '
@@ -879,4 +974,10 @@ Partial Class Internetplusplus
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents SegToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+    Friend WithEvents Button25 As Button
+    Friend WithEvents Button26 As Button
+    Friend WithEvents Button27 As Button
+    Friend WithEvents Button28 As Button
+    Friend WithEvents Button29 As Button
+    Friend WithEvents Button30 As Button
 End Class
